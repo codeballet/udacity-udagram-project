@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  AWS_MEDIA_BUCKET: udagram-stj-dev
+  AWS_PROFILE: default
+  AWS_REGION: ap-northeast-1
+  POSTGRESS_DB: udagramstjdev
+  POSTGRESS_HOST: udagramstjdev.czvzxikkjupa.ap-northeast-1.rds.amazonaws.com
+  URL: http://localhost:8100
