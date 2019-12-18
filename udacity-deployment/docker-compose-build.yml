@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: ./udacity-reverseproxy
+    image: codeballet/udacity-reverseproxy 
+  backend_user:
+    build:
+      context: ../udacity-restapi-user
+    image: codeballet/udacity-restapi-user
+  backend_feed:
+    build:
+      context: ../udacity-restapi-feed  
+    image: codeballet/udacity-restapi-feed
+  frontend:
+    build:
+      context: ../udacity-c2-frontend  
+    image: codeballet/udacity-c2-frontend
